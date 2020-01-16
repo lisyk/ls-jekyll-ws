@@ -1,0 +1,18 @@
+---
+layout: post
+title: Blog
+---
+
+<!-- post.url is automatically set by Jekyll to the output path of the post -->
+<!-- post.title is pulled from the post filename and can be overridden by setting title in front matter -->
+<!-- post.excerpt is the first paragraph of content by default -->
+
+<h1>My Blog</h1>
+
+<ul>
+    {% for post in page.posts %}
+        <li>{{ post.title }}</li>
+
+    {% endfor %}
+
+</ul>
